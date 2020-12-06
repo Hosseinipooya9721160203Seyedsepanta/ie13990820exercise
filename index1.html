@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sepanta pooya</title>
+    <title >sepanta pooya</title>
     <link rel="stylesheet" href="style.css"/>
     
 </head>
@@ -20,7 +20,7 @@
                 <div class="my-circle-center">
                     <a href="" target="_blank">
                         <!-- <img src="https://sepantagraphy.ir/wp-content/uploads/2020/10/Official-Final-02.png" alt="logo" class="logo"> -->
-                        <p>بازی شطرنج</p>   
+                        <p class="myP">بازی شطرنج</p>   
                     </a> 
                 </div>
             </div>
@@ -225,5 +225,20 @@
         </div>
 
     </div>
+    <script>
+        let items = document.getElementsByClassName('myP');
+        console.log(items);
+        console.log(items[1]);
+        items.textContent = 'Hello 2';
+        items.style.fontWeight = 'bold';
+        items.style.backgroundColor = 'yellow';
+
+        // Gives error
+        //items.style.backgroundColor = '#f4f4f4';
+
+        
+
+
+    </script>
 </body>
 </html>
