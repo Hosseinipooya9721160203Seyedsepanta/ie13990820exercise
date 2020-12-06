@@ -26,16 +26,16 @@
             </div>
             <div class="my-box-3">
                 <div class="my-circle-right">
-                    <a href="https://sepantagraphy.ir/our-services/"target="_blank">خدمات ما</a>
+                    <a href="https://sepantagraphy.ir/our-services/" target="_blank" class="mytitle">خدمات ما</a>
                 </div>
                 <div class="my-circle-right">
-                    <a href="https://sepantagraphy.ir/shop/" target="_blank">محصولات</a>
+                    <a href="https://sepantagraphy.ir/shop/" target="_blank" class="mytitle">محصولات</a>
                 </div>
                 <div class="my-circle-right">
-                    <a href="https://sepantagraphy.ir/blog/" target="_blank">مقالات</a>
+                    <a href="https://sepantagraphy.ir/blog/" target="_blank" class="mytitle">مقالات</a>
                 </div>
                 <div class="my-circle-right">
-                    <a href="https://sepantagraphy.ir/" target="_blank">خانه</a>
+                    <a href="https://sepantagraphy.ir/" target="_blank" class="mytitle">خانه</a>
                 </div>
             </div>    
         </div>
@@ -226,19 +226,13 @@
 
     </div>
     <script type="text/javascript">
-       console.log(document.getElementById('myP'));
-        let headerTitle = document.getElementById('myP');
-        console.log(headerTitle);
-        headerTitle.textContent = 'Hello';
-        headerTitle.innerText = 'Goodbye';
-        console.log(headerTitle.innerText);
-        headerTitle.innerHTML = '<h3>Hello</h3>';
- 
-
-
-
-        // Gives error
-        //items.style.backgroundColor = '#f4f4f4';
+       let li = document.getElementsByTagName('a');
+        console.log(li);
+        console.log(li[1]);
+        li[1].textContent = 'Change by JS';
+        li[2].textContent = 'Change by JS';
+        li[3].textContent = 'Change by JS';
+        li[4].textContent = 'Change by JS';
 
     </script>
 </body>
